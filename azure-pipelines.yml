@@ -16,7 +16,7 @@ pool:
 steps:
 - task: Docker@2
   inputs:
-    containerRegistry: ${serviceConnection}
+    containerRegistry: 'quayserviceconnection'
     repository: 'vipul05/azure_learning'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
